@@ -1,8 +1,7 @@
 <?php
 
-
 	if ($argc !== 2) {
-		echo "Неправильное количество параметров";
+		echo 'Неправильное количество параметров';
 		exit;
 	}
 
@@ -19,20 +18,18 @@
 
 		}
 
-		echo $visa_procedure;
-
 		if (isset($visa_procedure)) {
 			echo $country . ': ' . $visa_procedure;
 		}
 		else {
-			echo "Указанная страна не найдена в файле";
+			echo 'Указанная страна не найдена в файле';
 		}
 
 		fclose($file);
 	}
 
 	else {
-		echo "Не удалось открыть файл";
+		echo 'Не удалось открыть файл';
 	}
 
 ?>
